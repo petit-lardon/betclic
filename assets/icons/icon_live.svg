@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="16" viewBox="0 0 35 16">
+    <defs>
+        <rect id="6ixdcmwlta" width="35" height="16" x="0" y="0" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <g transform="translate(-58 -342) translate(-1) translate(11 221) translate(-1.133) translate(1.133 110) translate(10 8) translate(38) translate(0 3)">
+                                            <mask id="yh055pe22b" fill="#fff">
+                                                <use xlink:href="#6ixdcmwlta"/>
+                                            </mask>
+                                            <use fill="#292929" xlink:href="#6ixdcmwlta"/>
+                                            <g fill="#D2161E" mask="url(#yh055pe22b)">
+                                                <path d="M0 0H35V16H0z"/>
+                                            </g>
+                                        </g>
+                                        <text fill="#FFF" font-family="Metropolis-Bold, Metropolis" font-size="11" font-weight="bold" transform="translate(-58 -342) translate(-1) translate(11 221) translate(-1.133) translate(1.133 110) translate(10 8) translate(38) translate(0 3)">
+                                            <tspan x="5.535" y="11">LIVE</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

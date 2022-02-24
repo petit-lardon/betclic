@@ -1,0 +1,22 @@
+{
+  "name": "betclic",
+  "version": "1.0.0",
+  "description": "betclic integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petit-lardon/betclic.git"
+  },
+  "author": "jlavie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petit-lardon/betclic/issues"
+  },
+  "homepage": "https://github.com/petit-lardon/betclic#readme",
+  "dependencies": {
+    "sass": "^1.49.8"
+  }
+}
