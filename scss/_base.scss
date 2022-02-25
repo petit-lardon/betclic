@@ -1,0 +1,50 @@
+
+body {
+    font-family: Metropolis, Arial, Helvetica, sans-serif;
+    background-color: $bright-grey;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: $fontweight-base;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - $padding-base * 2);
+    max-width: 1080px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+}
+
+article, section {
+    display: flex;
+    flex-grow: 1;
+}
+
+.freebets {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.img-cover {
+    object-fit: cover;
+}
+
+$positions: (
+    "top-left": top left, 
+    "top-right": top right,
+    "top-center": top center,
+    "bottom-right": bottom right, 
+    "bottom-left": bottom left, 
+    "bottom-center": bottom center, 
+    "center-center": center center);
+
+@each $position1, $position2 in $positions {
+    .img-cover-#{$position1} {
+        object-position: $position2;
+    }
+}

@@ -1,5 +1,9 @@
-$red : #fe35d4;
+@import "scss/variable";
+@import "scss/base";
+@import "scss/font";
+@import "scss/icon";
 
-body {
-    background-color: $red;
-}
+@import "scss/header";
+@import "scss/offers";
+@import "scss/betcard";
+@import "scss/event";

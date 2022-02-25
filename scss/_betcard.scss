@@ -1,0 +1,35 @@
+.betcard {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: $radius;
+    overflow: hidden;
+
+
+    &__illustration {
+        width: 100%;
+        height: 200px;
+
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        padding: $padding-base;
+    }
+
+    &__odds {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+} 
+
+.betcard-black {
+
+}

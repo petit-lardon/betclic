@@ -1,0 +1,62 @@
+.exclusive-offer {
+    background: repeat url("../assets/backgrounds/background_pattern.jpg");
+    border-radius: $radius;
+    padding: $padding-double;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &__content {
+        width: 100%;
+        text-align: center;
+
+        &__text {
+            font-size: 1.5rem;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+
+    &__timer {
+        display: flex;
+        align-items: center;
+
+        .icon_timer {
+            width: 35px;
+
+            &::before {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        &__content {
+            background-color: $white;
+            color: $black;
+            text-transform: uppercase;
+            font-weight: 800;
+            border-radius: 20px;
+            padding: 5px 10px 5px 25px;
+
+            .times-up {
+                color: $red;
+            }
+        }
+    }
+
+    &__link {
+        a {
+            display: flex;
+            color: $white;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}

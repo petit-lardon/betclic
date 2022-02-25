@@ -4,9 +4,73 @@
         <meta charset="utf-8">
         <title>Betclic Integration Test</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <header>
+            <div class="header-wrapper">
+                <div class="header-wrapper__logo"><a href="www.betclic.fr"><img src="./assets/logos/logo_betclic.svg" alt="Logo Betclic" /></a></div>
+                <nav class="header-wrapper__nav"></nav>
+                <div class="header-wrapper__right">
+                    <div class="header-wrapper__right__freebet"></div>
+                    <div class="header-wrapper__right__balance"></div>
+                    <div class="header-wrapper__right__account"></div>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <article class="exclusive-offer">
+                <div class="exclusive-offer__content">
+                    <p class="exclusive-offer__content__text">Dépose 50€ ou plus pour recevoir</p>
+                    <p class="exclusive-offer__content__title">
+                        20€ de <span class="freebets"><span class="icon icon_freebet"></span>Freebets</span>
+                    </p>
+                </div>
+                <div class="exclusive-offer__timer">
+                    <span class="icon icon_timer"></span>
+                    <div class="exclusive-offer__timer__content">
+                        Fin dans <span class="times-up">03:34</span>
+                    </div>
+                </div>
+                <div class="exclusive-offer__link">
+                    <a href="www.betclic.fr">J'en profite <span class="icon icon_arrow_right_2"></span></a>
+                </div>
 
+            </article>
+            <section class="betcard betcard-soccer betcard-black">
+                <div class="betcard__illustration">
+                    <img src="./assets/img/live-match.PNG" alt="Messi" class="img-cover img-cover-top-left" loading="lazy" />
+                </div>
+                <div class="betcard__information event">
+                    <div class="event-icon">
+                        <span class="icon icon-sport_soccer"></span>
+                    </div>
+                    <div class="event-status">
+                        <div class="event-status__status">
+                            <span class="icon icon_tv_live"></span>
+                            <span class="icon icon_live"></span>
+                        </div>
+                        <div class="event-status__meet">
+                            Lyon 1 - 0 Marseille
+                        </div>
+                        <div class="event-status__competition">
+                            Europa League
+                        </div>
+                    </div>
+                    <div class="event-bets">
+                        <div class="event-bets__number">85</div>
+                        <div class="event-bets__wording">bets</div>
+                        <span class="icon icon_arrow_right_1"></span>
+                    </div>
+                </div>
+                <div class="betcard__odds">
+                    <div class="btn btn-odd btn-odd-up btn-odd-down">
+                        <p class="winner"></p>
+                        <p class="odds"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
     </body>
 </html>

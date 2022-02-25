@@ -1,0 +1,52 @@
+.event {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $padding-base;
+    gap: $small-gap;
+
+    &-icon {
+        width: 50px;
+    }
+
+    &-status {
+        flex-grow: 1;
+
+        &__meet {
+            font-size: 2rem;
+            font-weight: 800;
+            color: black;
+        }
+
+        &__competition {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $granite-grey;
+        }
+    }
+
+    &-bets {
+        position: relative;
+        width: 85px;
+
+        &__number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: black;
+        }
+
+        &__wording {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $granite-grey;
+        }
+
+        .icon {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
