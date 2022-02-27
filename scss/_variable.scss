@@ -27,16 +27,19 @@ $back: $ghost-white;
 // FONTS
 
 $font-size-base: 16px;
+$font-size-base-tablet: 14px;
+$font-size-base-mobile: 12px;
 $line-height-base: 1.2;
 $fontweight-base: 400;
 
 //CONTAINERS
 
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
-$margin-base: 20px;
-$padding-base: 20px;
+$margin-base: 15px;
+$padding-base: 15px;
+$padding-base-mobile: 10px;
 $padding-double: $padding-base * 2;
 
 $radius: 10px;
-$gap: 30px;
-$small-gap: 20px;
+$gap: 20px;
+$small-gap: 10px;

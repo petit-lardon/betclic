@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     border-radius: $radius;
     overflow: hidden;
-
+    flex-basis: 450px;
+    align-content: space-between;
+    background-color: $white;
 
     &__illustration {
         width: 100%;
@@ -27,9 +29,48 @@
         display: flex;
         flex-wrap: nowrap;
         width: 100%;
+        gap: $small-gap;
+        padding: $padding-base;
+        background-color: $ghost-white;
     }
 } 
 
 .betcard-black {
+    background-color: $black;
 
+    .betcard {
+        &__odds {
+            background-color: $black;
+        }
+    }
+    
+    .event-status__meet,
+    .event-bets__number {
+        color: $white;
+    }    
+}
+
+.betcard-black-white {
+    background-color: $black;
+    
+    .event-status__meet,
+    .event-bets__number {
+        color: $white;
+
+        ul {
+            margin: 0;
+        }
+        
+        li {
+            list-style-type: decimal;
+        }
+
+        li:first-child {
+            color: $yellow;
+        }
+    }    
+}
+
+.betcard-full {
+    flex-basis: 100%;
 }

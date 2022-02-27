@@ -1,0 +1,101 @@
+.header-wrapper {
+    padding: 10px;
+    background-color: $red;
+    display: flex;
+    gap: $small-gap;
+    justify-content: space-between;
+
+    &__nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        left: 0;
+        z-index: 10;
+        
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $granite-grey;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+
+        &__freebet {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: $white;
+            font-weight: 700;
+
+            .icon_freebet {
+                border: 2px solid $white;
+            }
+
+            .icon::before {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        &__balance {
+            display: flex;
+            align-items: center;
+
+            .icon_deposit {
+                width: 10px;
+    
+                &::before {
+                    width: 30px;
+                    height: 33px;
+                    background-position-y: 2px;
+                }
+            }
+
+            &__amount {
+                background-color: $dark-red;
+                color: $white;
+                font-weight: 700;
+                border-radius: 20px;
+                padding: 5px 10px 5px 25px;
+
+                .small {
+                    font-size: .8em;
+                }
+            }
+        }
+
+        &__account {
+            position: relative;
+
+            .notifications {
+                position: absolute;
+                background-color: $black;
+                padding: 1px 3px;
+                font-size: 8px;
+                border-radius: 50px;
+                top: -5px;
+                right: -3px;
+                color: $white;
+                font-weight: 800;
+            }
+        }
+    }
+}

@@ -1,44 +1,113 @@
 .event {
+    @media screen and (min-width: 60em){
+        gap: $small-gap;
+    }
+
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
     padding: $padding-base;
-    gap: $small-gap;
 
     &-icon {
-        width: 50px;
+        @media screen and (min-width: 40em){
+            width: 50px;
+        }
+        
+        width: 40px;
     }
 
     &-status {
         flex-grow: 1;
 
+        &__status {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            &__date, &__live {
+                align-items: center;
+                display: flex;
+                gap: 10px;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: $granite-grey;
+            }
+
+            &__date {
+                text-transform: uppercase;
+                
+                .icon::before {
+                    width: 2rem;
+                    height: 2rem;
+                    background-position: center;
+                }
+            }
+        }
+
         &__meet {
-            font-size: 2rem;
+            @media screen and (min-width: 40em){
+                width: 200px;
+            }
+            
+            @media screen and (min-width: 60em){
+                width: 250px;
+            }
+
+            font-size: 1.4rem;
             font-weight: 800;
             color: black;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 170px;
         }
 
         &__competition {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: $granite-grey;
         }
     }
 
     &-bets {
+        @media screen and (min-width: 40em){
+            width: 70px;
+
+            .icon::before{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        
+        @media screen and (min-width: 60em){
+            width: 85px;
+
+            .icon::before{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
         position: relative;
-        width: 85px;
+        width: 60px;
+        text-align: center;
+        cursor: pointer;
+
+        .icon::before{
+            width: 10px;
+            height: 10px;
+        }
 
         &__number {
-            font-size: 2rem;
-            font-weight: 800;
+            font-size: 1.2rem;
+            font-weight: 700;
             color: black;
         }
 
         &__wording {
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: 600;
             color: $granite-grey;
         }
 

@@ -1,9 +1,24 @@
-body {
+html {
   font-family: Metropolis, Arial, Helvetica, sans-serif;
   background-color: #E8E9EB;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.2;
   font-weight: 400;
+}
+@media screen and (min-width: 40em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 60em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  margin-bottom: 80px;
 }
 
 p {
@@ -11,12 +26,13 @@ p {
 }
 
 .container {
-  width: calc(100% - 40px);
+  width: calc(100% - 30px);
   max-width: 1080px;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
+  align-items: stretch;
 }
 
 article, section {
@@ -95,8 +111,20 @@ article, section {
 }
 
 [class*=icon-sport_]::before {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (min-width: 40em) {
+  [class*=icon-sport_]::before {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 60em) {
+  [class*=icon-sport_]::before {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 [class*=icon-nav_]::before {
@@ -195,10 +223,144 @@ article, section {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3Cpath id='ueui86bcca' d='M12.5.25c3.452 0 6.25 2.798 6.25 6.25 0 2.575-1.558 4.787-3.783 5.744 4.568.91 7.292 4.4 8.171 10.47.159 1.092-.599 2.107-1.692 2.265-.095.014-.191.021-.287.021H3.869c-1.104 0-2-.895-2-2 0-.077.005-.155.014-.231.72-6.18 3.41-9.7 8.072-10.56C7.77 11.235 6.25 9.045 6.25 6.5 6.25 3.048 9.048.25 12.5.25zm-.127 13.25c-5.346 0-8.247 2.978-9 9.442L3.37 23c0 .276.223.5.5.5h17.289c.024 0 .048-.002.072-.005.273-.04.462-.293.423-.567-.934-6.444-3.933-9.428-9.28-9.428zM12.5 1.75c-2.623 0-4.75 2.127-4.75 4.75s2.127 4.75 4.75 4.75 4.75-2.127 4.75-4.75-2.127-4.75-4.75-4.75z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cg transform='translate(-325 -40) translate(-1) translate(1) translate(0 25) translate(325 10) translate(0 5)'%3E%3Cmask id='sxdsuv1r8b' fill='%23fff'%3E%3Cuse xlink:href='%23ueui86bcca'/%3E%3C/mask%3E%3Cuse fill='%23FFF' fill-rule='nonzero' xlink:href='%23ueui86bcca'/%3E%3Cg fill='%23FFF' mask='url(%23sxdsuv1r8b)'%3E%3Cpath d='M0 0H25V25H0z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.btn {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FC0;
+  color: #111;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out;
+}
+@media screen and (min-width: 60em) {
+  .btn {
+    padding: 15px;
+  }
+}
+.btn:hover {
+  background-color: #e6b800;
+}
+.btn .winner {
+  font-size: 0.8rem;
+}
+.btn .odds {
+  font-weight: 800;
+}
+.btn-odd-inverse {
+  background-color: #111;
+  color: #FC0;
+}
+.btn-odd-inverse:hover {
+  background-color: #373737;
+}
+.btn-odd-up {
+  background-color: #5FC626;
+  color: #FFF;
+}
+.btn-odd-up:hover {
+  background-color: #4a9b1e;
+}
+.btn-odd-down {
+  background-color: #FF3C3C;
+  color: #FFF;
+}
+.btn-odd-down:hover {
+  background-color: #ef0000;
+}
+
+.header-wrapper {
+  padding: 10px;
+  background-color: #D2161E;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.header-wrapper__nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  left: 0;
+  z-index: 10;
+}
+.header-wrapper__nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+.header-wrapper__nav__list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666666;
+  text-decoration: none;
+}
+.header-wrapper__right {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.header-wrapper__right__freebet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #FFF;
+  font-weight: 700;
+}
+.header-wrapper__right__freebet .icon_freebet {
+  border: 2px solid #FFF;
+}
+.header-wrapper__right__freebet .icon::before {
+  width: 10px;
+  height: 10px;
+}
+.header-wrapper__right__balance {
+  display: flex;
+  align-items: center;
+}
+.header-wrapper__right__balance .icon_deposit {
+  width: 10px;
+}
+.header-wrapper__right__balance .icon_deposit::before {
+  width: 30px;
+  height: 33px;
+  background-position-y: 2px;
+}
+.header-wrapper__right__balance__amount {
+  background-color: #920F14;
+  color: #FFF;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 5px 10px 5px 25px;
+}
+.header-wrapper__right__balance__amount .small {
+  font-size: 0.8em;
+}
+.header-wrapper__right__account {
+  position: relative;
+}
+.header-wrapper__right__account .notifications {
+  position: absolute;
+  background-color: #111;
+  padding: 1px 3px;
+  font-size: 8px;
+  border-radius: 50px;
+  top: -5px;
+  right: -3px;
+  color: #FFF;
+  font-weight: 800;
+}
+
 .exclusive-offer {
   background: repeat url("../assets/backgrounds/background_pattern.jpg");
   border-radius: 10px;
-  padding: 40px;
+  padding: 30px;
   color: #FFF;
   display: flex;
   justify-content: space-between;
@@ -252,6 +414,9 @@ article, section {
   flex-wrap: wrap;
   border-radius: 10px;
   overflow: hidden;
+  flex-basis: 450px;
+  align-content: space-between;
+  background-color: #FFF;
 }
 .betcard__illustration {
   width: 100%;
@@ -266,50 +431,156 @@ article, section {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
 }
 .betcard__odds {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  gap: 10px;
+  padding: 15px;
+  background-color: #F7F8FA;
+}
+
+.betcard-black {
+  background-color: #111;
+}
+.betcard-black .betcard__odds {
+  background-color: #111;
+}
+.betcard-black .event-status__meet,
+.betcard-black .event-bets__number {
+  color: #FFF;
+}
+
+.betcard-black-white {
+  background-color: #111;
+}
+.betcard-black-white .event-status__meet,
+.betcard-black-white .event-bets__number {
+  color: #FFF;
+}
+.betcard-black-white .event-status__meet ul,
+.betcard-black-white .event-bets__number ul {
+  margin: 0;
+}
+.betcard-black-white .event-status__meet li,
+.betcard-black-white .event-bets__number li {
+  list-style-type: decimal;
+}
+.betcard-black-white .event-status__meet li:first-child,
+.betcard-black-white .event-bets__number li:first-child {
+  color: #FC0;
+}
+
+.betcard-full {
+  flex-basis: 100%;
 }
 
 .event {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
-  gap: 20px;
+  padding: 15px;
+}
+@media screen and (min-width: 60em) {
+  .event {
+    gap: 10px;
+  }
 }
 .event-icon {
-  width: 50px;
+  width: 40px;
+}
+@media screen and (min-width: 40em) {
+  .event-icon {
+    width: 50px;
+  }
 }
 .event-status {
   flex-grow: 1;
 }
+.event-status__status {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.event-status__status__date, .event-status__status__live {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #666666;
+}
+.event-status__status__date {
+  text-transform: uppercase;
+}
+.event-status__status__date .icon::before {
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+}
 .event-status__meet {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 170px;
+}
+@media screen and (min-width: 40em) {
+  .event-status__meet {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 60em) {
+  .event-status__meet {
+    width: 250px;
+  }
 }
 .event-status__competition {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #666666;
 }
 .event-bets {
   position: relative;
-  width: 85px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (min-width: 40em) {
+  .event-bets {
+    width: 70px;
+  }
+  .event-bets .icon::before {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (min-width: 60em) {
+  .event-bets {
+    width: 85px;
+  }
+  .event-bets .icon::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+.event-bets .icon::before {
+  width: 10px;
+  height: 10px;
 }
 .event-bets__number {
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: black;
 }
 .event-bets__wording {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: #666666;
 }
 .event-bets .icon {

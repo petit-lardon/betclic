@@ -1,0 +1,53 @@
+.btn {
+    @media screen and (min-width: 60em){  
+        padding: $padding-base;
+    }
+
+    text-align: center;
+    padding: $padding-base-mobile;
+    border-radius: $radius;
+    background-color: $yellow;
+    color: $black;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: background-color .5s ease-out;
+
+    &:hover {
+        background-color: darken($yellow, 5%);
+    }
+
+    .winner {
+        font-size: .8rem;
+    }
+
+    .odds {
+        font-weight: 800;
+    }
+
+    &-odd-inverse {
+        background-color: $black;
+        color: $yellow;
+
+        &:hover {
+            background-color: lighten($black, 15%);
+        }
+    }
+
+    &-odd-up {
+        background-color: $green;
+        color: $white;
+
+        &:hover {
+            background-color: darken($green, 10%);
+        }
+    }
+
+    &-odd-down {
+        background-color: $coral-red;
+        color: $white;
+
+        &:hover {
+            background-color: darken($coral-red, 15%);
+        }
+    }
+}

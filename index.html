@@ -10,11 +10,39 @@
         <header>
             <div class="header-wrapper">
                 <div class="header-wrapper__logo"><a href="www.betclic.fr"><img src="./assets/logos/logo_betclic.svg" alt="Logo Betclic" /></a></div>
-                <nav class="header-wrapper__nav"></nav>
+                <nav class="header-wrapper__nav">
+                    <ul class="header-wrapper__nav__list">
+                        <li>
+                            <a href="m.betclic.fr"><span class="icon icon-nav_sports"></span>Sports</span></a>
+                        </li>
+                        <li>
+                            <a href="m.betclic.fr"><span class="icon icon-nav_now"></span>Now</span></a>
+                        </li>
+                        <li>
+                            <a href="m.betclic.fr"><span class="icon icon-nav_top_bets"></span>Top bets</span></a>
+                        </li>
+                        <li>
+                            <a href="m.betclic.fr"><span class="icon icon-nav_my_bets"></span>My bets</span></a>
+                        </li>
+                        <li>
+                            <a href="m.betclic.fr"><span class="icon icon-nav_casino"></span>Casino</span></a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="header-wrapper__right">
-                    <div class="header-wrapper__right__freebet"></div>
-                    <div class="header-wrapper__right__balance"></div>
-                    <div class="header-wrapper__right__account"></div>
+                    <div class="header-wrapper__right__freebet">
+                        <span class="icon icon_freebet"></span> 10 €
+                    </div>
+                    <div class="header-wrapper__right__balance">
+                        <span class="icon icon_deposit"></span>
+                        <div class="header-wrapper__right__balance__amount">
+                            126,<span class="small">90</span> €
+                        </div>
+                    </div>
+                    <div class="header-wrapper__right__account">
+                        <span class="icon icon_account_light"></span>
+                        <span class="notifications">2</span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -37,7 +65,7 @@
                 </div>
 
             </article>
-            <section class="betcard betcard-soccer betcard-black">
+            <section class="betcard betcard-soccer betcard-black betcard-full">
                 <div class="betcard__illustration">
                     <img src="./assets/img/live-match.PNG" alt="Messi" class="img-cover img-cover-top-left" loading="lazy" />
                 </div>
@@ -47,8 +75,13 @@
                     </div>
                     <div class="event-status">
                         <div class="event-status__status">
-                            <span class="icon icon_tv_live"></span>
-                            <span class="icon icon_live"></span>
+                            <div class="event-status__status__date">
+                                <span class="icon icon_live"></span>
+                                <span class="icon icon_tv_live"></span>
+                            </div>
+                            <div class="event-status__status__live">
+                                85'
+                            </div>
                         </div>
                         <div class="event-status__meet">
                             Lyon 1 - 0 Marseille
@@ -64,12 +97,169 @@
                     </div>
                 </div>
                 <div class="betcard__odds">
-                    <div class="btn btn-odd btn-odd-up btn-odd-down">
-                        <p class="winner"></p>
-                        <p class="odds"></p>
+                    <div class="btn btn-odd">
+                        <p class="winner">1</p>
+                        <p class="odds">1,12</p>
+                    </div>
+                    <div class="btn btn-odd">
+                        <p class="winner">N</p>
+                        <p class="odds">1,12</p>
+                    </div>
+                    <div class="btn btn-odd">
+                        <p class="winner">2</p>
+                        <p class="odds">1,12</p>
                     </div>
                 </div>
             </section>
+            <section class="betcard betcard-table-tennis">
+                <div class="betcard__information event">
+                    <div class="event-icon">
+                        <span class="icon icon-sport_table_tennis"></span>
+                    </div>
+                    <div class="event-status">
+                        <div class="event-status__status">
+                            <div class="event-status__status__date">
+                                16/02/17 10:40
+                            </div>
+                        </div>
+                        <div class="event-status__meet">
+                            Ma / Xu - P. Franzzzz
+                        </div>
+                        <div class="event-status__competition">
+                            Australia Open
+                        </div>
+                    </div>
+                    <div class="event-bets">
+                        <div class="event-bets__number">25</div>
+                        <div class="event-bets__wording">bets</div>
+                        <span class="icon icon_arrow_right_1"></span>
+                    </div>
+                </div>
+                <div class="betcard__odds">
+                    <div class="btn btn-odd btn-odd-up">
+                        <p class="winner">1</p>
+                        <p class="odds">99</p>
+                    </div>
+                    <div class="btn btn-odd btn-odd-down">
+                        <p class="winner">N</p>
+                        <p class="odds">1,12</p>
+                    </div>
+                </div>
+            </section>
+            <section class="betcard betcard-soccer">
+                <div class="betcard__information event">
+                    <div class="event-icon">
+                        <span class="icon icon-sport_soccer"></span>
+                    </div>
+                    <div class="event-status">
+                        <div class="event-status__status">
+                            <div class="event-status__status__date">
+                                <span class="icon icon_tv_prelive"></span>
+                                Today 10:40
+                            </div>
+                        </div>
+                        <div class="event-status__meet">
+                            Lyon F. - Barcelone
+                        </div>
+                        <div class="event-status__competition">
+                            Champion's ligue
+                        </div>
+                    </div>
+                    <div class="event-bets">
+                        <div class="event-bets__number">107</div>
+                        <div class="event-bets__wording">bets</div>
+                        <span class="icon icon_arrow_right_1"></span>
+                    </div>
+                </div>
+                <div class="betcard__odds">
+                    <div class="btn btn-odd btn-odd-inverse">
+                        <p class="winner">1</p>
+                        <p class="odds">99</p>
+                    </div>
+                    <div class="btn btn-odd">
+                        <p class="winner">N</p>
+                        <p class="odds">1,12</p>
+                    </div>
+                    <div class="btn btn-odd">
+                        <p class="winner">2</p>
+                        <p class="odds">1,12</p>
+                    </div>
+                </div>
+            </section>
+            <section class="betcard betcard-tennis">
+                <div class="betcard__information event">
+                    <div class="event-icon">
+                        <span class="icon icon-sport_tennis"></span>
+                    </div>
+                    <div class="event-status">
+                        <div class="event-status__status">
+                            <div class="event-status__status__date">
+                                Today 09:00
+                            </div>
+                        </div>
+                        <div class="event-status__meet">
+                            S. Zhang - J. Paolini
+                        </div>
+                        <div class="event-status__competition">
+                            Munich ATP
+                        </div>
+                    </div>
+                    <div class="event-bets">
+                        <div class="event-bets__number">99</div>
+                        <div class="event-bets__wording">bets</div>
+                        <span class="icon icon_arrow_right_1"></span>
+                    </div>
+                </div>
+                <div class="betcard__odds">
+                    <div class="btn btn-odd">
+                        <p class="odds">Bet now</p>
+                    </div>
+                </div>
+            </section>
+            <section class="betcard betcard-sport-motor betcard-black-white">
+                <div class="betcard__information event">
+                    <div class="event-icon">
+                        <span class="icon icon-sport_motor"></span>
+                    </div>
+                    <div class="event-status">
+                        <div class="event-status__status">
+                            <div class="event-status__status__date">
+                                <span class="icon icon_live"></span>
+                                <span class="icon icon_tv_live"></span>
+                            </div>
+                            <div class="event-status__status__live">
+                                8 laps to go
+                            </div>
+                        </div>
+                        <div class="event-status__meet">
+                            <ul>
+                                <li>F. Massa (BMW)</li>
+                                <li>L. Hamilton (Mc Larren</li>
+                                <li>F. Alonso (Ferari)</li>
+                            </ul>
+                        </div>
+                        <div class="event-status__competition">
+                            Monaco GP
+                        </div>
+                    </div>
+                    <div class="event-bets">
+                        <div class="event-bets__number">25</div>
+                        <div class="event-bets__wording">bets</div>
+                        <span class="icon icon_arrow_right_1"></span>
+                    </div>
+                </div>
+                <div class="betcard__odds">
+                    <div class="btn btn-odd">
+                        <p class="winner">1</p>
+                        <p class="odds">2,45</p>
+                    </div>
+                    <div class="btn btn-odd">
+                        <p class="winner">2</p>
+                        <p class="odds">1,12</p>
+                    </div>
+                </div>
+            </section>
+
         </main>
         <footer></footer>
     </body>
